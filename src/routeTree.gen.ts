@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as PaymentRouteImport } from './routes/payment'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CareersRouteImport } from './routes/careers'
@@ -28,6 +29,11 @@ const PricingRoute = PricingRouteImport.update({
 const PortfolioRoute = PortfolioRouteImport.update({
   id: '/portfolio',
   path: '/portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentRoute = PaymentRouteImport.update({
+  id: '/payment',
+  path: '/payment',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeedbackRoute = FeedbackRouteImport.update({
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -90,6 +97,7 @@ export interface FileRoutesByTo {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -103,6 +111,7 @@ export interface FileRoutesById {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
   '/services/$slug': typeof ServicesSlugRoute
@@ -117,6 +126,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/payment'
     | '/portfolio'
     | '/pricing'
     | '/services/$slug'
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/payment'
     | '/portfolio'
     | '/pricing'
     | '/services/$slug'
@@ -141,6 +152,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/payment'
     | '/portfolio'
     | '/pricing'
     | '/services/$slug'
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   CareersRoute: typeof CareersRoute
   ContactRoute: typeof ContactRoute
   FeedbackRoute: typeof FeedbackRoute
+  PaymentRoute: typeof PaymentRoute
   PortfolioRoute: typeof PortfolioRoute
   PricingRoute: typeof PricingRoute
   ServicesSlugRoute: typeof ServicesSlugRoute
@@ -174,6 +187,13 @@ declare module '@tanstack/react-router' {
       path: '/portfolio'
       fullPath: '/portfolio'
       preLoaderRoute: typeof PortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment': {
+      id: '/payment'
+      path: '/payment'
+      fullPath: '/payment'
+      preLoaderRoute: typeof PaymentRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/feedback': {
@@ -242,6 +262,7 @@ const rootRouteChildren: RootRouteChildren = {
   CareersRoute: CareersRoute,
   ContactRoute: ContactRoute,
   FeedbackRoute: FeedbackRoute,
+  PaymentRoute: PaymentRoute,
   PortfolioRoute: PortfolioRoute,
   PricingRoute: PricingRoute,
   ServicesSlugRoute: ServicesSlugRoute,
