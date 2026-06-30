@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as PaymentRouteImport } from './routes/payment'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CareersRouteImport } from './routes/careers'
@@ -34,6 +35,11 @@ const PortfolioRoute = PortfolioRouteImport.update({
 const PaymentRoute = PaymentRouteImport.update({
   id: '/payment',
   path: '/payment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeedbackRoute = FeedbackRouteImport.update({
@@ -84,6 +90,7 @@ export interface FileRoutesByFullPath {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
@@ -97,6 +104,7 @@ export interface FileRoutesByTo {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
@@ -111,6 +119,7 @@ export interface FileRoutesById {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/feedback': typeof FeedbackRoute
+  '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
@@ -126,6 +135,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/login'
     | '/payment'
     | '/portfolio'
     | '/pricing'
@@ -139,6 +149,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/login'
     | '/payment'
     | '/portfolio'
     | '/pricing'
@@ -152,6 +163,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/feedback'
+    | '/login'
     | '/payment'
     | '/portfolio'
     | '/pricing'
@@ -166,6 +178,7 @@ export interface RootRouteChildren {
   CareersRoute: typeof CareersRoute
   ContactRoute: typeof ContactRoute
   FeedbackRoute: typeof FeedbackRoute
+  LoginRoute: typeof LoginRoute
   PaymentRoute: typeof PaymentRoute
   PortfolioRoute: typeof PortfolioRoute
   PricingRoute: typeof PricingRoute
@@ -194,6 +207,13 @@ declare module '@tanstack/react-router' {
       path: '/payment'
       fullPath: '/payment'
       preLoaderRoute: typeof PaymentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/feedback': {
@@ -262,6 +282,7 @@ const rootRouteChildren: RootRouteChildren = {
   CareersRoute: CareersRoute,
   ContactRoute: ContactRoute,
   FeedbackRoute: FeedbackRoute,
+  LoginRoute: LoginRoute,
   PaymentRoute: PaymentRoute,
   PortfolioRoute: PortfolioRoute,
   PricingRoute: PricingRoute,
