@@ -99,3 +99,40 @@ export function SectionHeading({
     </div>
   );
 }
+
+export function PageHero({
+  eyebrow,
+  title,
+  subtitle,
+}: {
+  eyebrow?: string;
+  title: ReactNode;
+  subtitle?: string;
+}) {
+  return (
+    <section className="relative overflow-hidden pt-36 pb-12">
+      <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
+      <div className="mx-auto max-w-4xl px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {eyebrow && (
+            <span className="inline-flex items-center rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+              {eyebrow}
+            </span>
+          )}
+          <h1 className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
+              {subtitle}
+            </p>
+          )}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
