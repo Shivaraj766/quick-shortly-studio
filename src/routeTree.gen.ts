@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SignupRouteImport } from './routes/signup'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as PaymentRouteImport } from './routes/payment'
@@ -22,6 +23,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
 
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
@@ -94,6 +100,7 @@ export interface FileRoutesByFullPath {
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/signup': typeof SignupRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services/': typeof ServicesIndexRoute
 }
@@ -108,6 +115,7 @@ export interface FileRoutesByTo {
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/signup': typeof SignupRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
 }
@@ -123,6 +131,7 @@ export interface FileRoutesById {
   '/payment': typeof PaymentRoute
   '/portfolio': typeof PortfolioRoute
   '/pricing': typeof PricingRoute
+  '/signup': typeof SignupRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services/': typeof ServicesIndexRoute
 }
@@ -139,6 +148,7 @@ export interface FileRouteTypes {
     | '/payment'
     | '/portfolio'
     | '/pricing'
+    | '/signup'
     | '/services/$slug'
     | '/services/'
   fileRoutesByTo: FileRoutesByTo
@@ -153,6 +163,7 @@ export interface FileRouteTypes {
     | '/payment'
     | '/portfolio'
     | '/pricing'
+    | '/signup'
     | '/services/$slug'
     | '/services'
   id:
@@ -167,6 +178,7 @@ export interface FileRouteTypes {
     | '/payment'
     | '/portfolio'
     | '/pricing'
+    | '/signup'
     | '/services/$slug'
     | '/services/'
   fileRoutesById: FileRoutesById
@@ -182,12 +194,20 @@ export interface RootRouteChildren {
   PaymentRoute: typeof PaymentRoute
   PortfolioRoute: typeof PortfolioRoute
   PricingRoute: typeof PricingRoute
+  SignupRoute: typeof SignupRoute
   ServicesSlugRoute: typeof ServicesSlugRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pricing': {
       id: '/pricing'
       path: '/pricing'
@@ -286,6 +306,7 @@ const rootRouteChildren: RootRouteChildren = {
   PaymentRoute: PaymentRoute,
   PortfolioRoute: PortfolioRoute,
   PricingRoute: PricingRoute,
+  SignupRoute: SignupRoute,
   ServicesSlugRoute: ServicesSlugRoute,
   ServicesIndexRoute: ServicesIndexRoute,
 }
