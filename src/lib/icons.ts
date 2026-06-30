@@ -1,0 +1,32 @@
+import {
+  Instagram,
+  Heart,
+  Camera,
+  Building2,
+  Sparkles,
+  Clapperboard,
+  Film,
+  Scissors,
+  Shapes,
+  Hexagon,
+  Palette,
+  Youtube,
+  Share2,
+  type LucideIcon,
+} from "lucide-react";
+
+export const ICONS: Record<string, LucideIcon> = {
+  Instagram,
+  Heart,
+  Camera,
+  Building2,
+  Sparkles,
+  Clapperboard,
+  Film,
+  Scissors,
+  Shapes,
+  Hexagon,
+  Palette,
+  Youtube,
+  Share2,
+};
