@@ -31,8 +31,8 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-screen pt-28">
         <div className="absolute inset-0 -z-10">
-          <img src={heroImg} alt="Filmmaker shooting a neon city on an iPhone" className="h-full w-full object-cover opacity-40" width={1536} height={1024} />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+          <img src={heroImg} alt="Filmmaker shooting a neon city on an iPhone" className="h-full w-full object-cover opacity-70" width={1536} height={1024} />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/70 to-background" />
           <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         </div>
 
