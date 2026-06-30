@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { label: "Portfolio", to: "/portfolio" },
   { label: "Pricing", to: "/pricing" },
   { label: "Booking", to: "/booking" },
+  { label: "Payments", to: "/payment" },
   { label: "Careers", to: "/careers" },
   { label: "Feedback", to: "/feedback" },
   { label: "Contact", to: "/contact" },
