@@ -15,6 +15,7 @@ import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as PaymentRouteImport } from './routes/payment'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as FeedbackRouteImport } from './routes/feedback'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CareersRouteImport } from './routes/careers'
 import { Route as BookingRouteImport } from './routes/booking'
@@ -51,6 +52,11 @@ const LoginRoute = LoginRouteImport.update({
 const FeedbackRoute = FeedbackRouteImport.update({
   id: '/feedback',
   path: '/feedback',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/booking': typeof BookingRoute
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
   '/feedback': typeof FeedbackRoute
   '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
@@ -110,6 +117,7 @@ export interface FileRoutesByTo {
   '/booking': typeof BookingRoute
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
   '/feedback': typeof FeedbackRoute
   '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
@@ -126,6 +134,7 @@ export interface FileRoutesById {
   '/booking': typeof BookingRoute
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
   '/feedback': typeof FeedbackRoute
   '/login': typeof LoginRoute
   '/payment': typeof PaymentRoute
@@ -143,6 +152,7 @@ export interface FileRouteTypes {
     | '/booking'
     | '/careers'
     | '/contact'
+    | '/dashboard'
     | '/feedback'
     | '/login'
     | '/payment'
@@ -158,6 +168,7 @@ export interface FileRouteTypes {
     | '/booking'
     | '/careers'
     | '/contact'
+    | '/dashboard'
     | '/feedback'
     | '/login'
     | '/payment'
@@ -173,6 +184,7 @@ export interface FileRouteTypes {
     | '/booking'
     | '/careers'
     | '/contact'
+    | '/dashboard'
     | '/feedback'
     | '/login'
     | '/payment'
@@ -189,6 +201,7 @@ export interface RootRouteChildren {
   BookingRoute: typeof BookingRoute
   CareersRoute: typeof CareersRoute
   ContactRoute: typeof ContactRoute
+  DashboardRoute: typeof DashboardRoute
   FeedbackRoute: typeof FeedbackRoute
   LoginRoute: typeof LoginRoute
   PaymentRoute: typeof PaymentRoute
@@ -241,6 +254,13 @@ declare module '@tanstack/react-router' {
       path: '/feedback'
       fullPath: '/feedback'
       preLoaderRoute: typeof FeedbackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -301,6 +321,7 @@ const rootRouteChildren: RootRouteChildren = {
   BookingRoute: BookingRoute,
   CareersRoute: CareersRoute,
   ContactRoute: ContactRoute,
+  DashboardRoute: DashboardRoute,
   FeedbackRoute: FeedbackRoute,
   LoginRoute: LoginRoute,
   PaymentRoute: PaymentRoute,
