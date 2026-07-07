@@ -82,14 +82,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Quick Shortly — Shoot on iPhone. Edit Like Cinema." },
+      { title: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
       {
         name: "description",
         content:
           "Quick Shortly is a premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics with fast delivery.",
       },
       { name: "author", content: "Quick Shortly" },
-      { property: "og:title", content: "Quick Shortly — Shoot on iPhone. Edit Like Cinema." },
+      { property: "og:title", content: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
       {
         property: "og:description",
         content: "Cinematic iPhone shoots & professional video editing for brands and creators.",
@@ -97,6 +97,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@QuickShortly" },
+      { name: "twitter:title", content: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
+      { name: "description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },
+      { property: "og:description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },
+      { name: "twitter:description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f26fa3e2-8aea-4346-a261-6eefaa15bb6f/id-preview-81a8c43a--cbf5b8f2-2994-46a6-b3e2-14c6e1e8cd11.lovable.app-1782794063859.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f26fa3e2-8aea-4346-a261-6eefaa15bb6f/id-preview-81a8c43a--cbf5b8f2-2994-46a6-b3e2-14c6e1e8cd11.lovable.app-1782794063859.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
