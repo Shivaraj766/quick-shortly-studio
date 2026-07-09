@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { MessageCircle, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { MessageCircle, Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { BRAND } from "@/lib/site-data";
 import { PageHero, Reveal } from "@/components/site/primitives";
 
