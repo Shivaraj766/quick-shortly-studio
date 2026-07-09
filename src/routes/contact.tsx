@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { MessageCircle, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { MessageCircle, Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { BRAND } from "@/lib/site-data";
 import { PageHero, Reveal } from "@/components/site/primitives";
 
@@ -25,8 +25,8 @@ const CHANNELS = [
   { icon: Instagram, label: "Instagram", value: "@quickshortly", href: BRAND.instagram },
   { icon: Youtube, label: "YouTube", value: "Quick Shortly", href: BRAND.youtube },
   { icon: Mail, label: "Email", value: BRAND.email, href: `mailto:${BRAND.email}` },
-  { icon: Phone, label: "Phone", value: BRAND.phone, href: `tel:${BRAND.phone}` },
-  { icon: MapPin, label: "Studio", value: "Mumbai, India", href: "https://maps.google.com/?q=Mumbai" },
+  { icon: Phone, label: "Phone", value: BRAND.phone, href: `tel:${BRAND.phone.replace(/\s/g, "")}` },
+  { icon: Phone, label: "Phone", value: BRAND.phone2, href: `tel:${BRAND.phone2.replace(/\s/g, "")}` },
 ];
 
 function Contact() {

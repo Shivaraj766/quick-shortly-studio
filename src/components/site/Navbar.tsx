@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Sparkles } from "lucide-react";
-import { NAV_LINKS, BRAND } from "@/lib/site-data";
+import { Menu, X } from "lucide-react";
+import { NAV_LINKS } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/quickshotly-bolt.png.asset.json";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,8 +36,8 @@ export function Navbar() {
         )}
       >
         <Link to="/" className="group flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground shadow-glow-sm transition-transform group-hover:scale-105">
-            <Sparkles className="h-5 w-5" />
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary/10 p-1.5 shadow-glow-sm transition-transform group-hover:scale-105">
+            <img src={logo.url} alt="Quick Shortly logo" className="h-full w-auto" />
           </span>
           <span className="text-base font-bold tracking-tight">Quick Shortly</span>
         </Link>

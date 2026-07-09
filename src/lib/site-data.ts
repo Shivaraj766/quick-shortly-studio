@@ -14,9 +14,10 @@ export const NAV_LINKS = [
 export const BRAND = {
   name: "Quick Shortly",
   tagline: "Shoot on iPhone. Edit Like Cinema.",
-  email: "hello@quickshortly.com",
-  phone: "+91 98765 43210",
-  whatsapp: "919876543210",
+  email: "quickshotly21@gmail.com",
+  phone: "+91 81437 41961",
+  phone2: "+91 86888 72349",
+  whatsapp: "918143741961",
   instagram: "https://instagram.com",
   youtube: "https://youtube.com",
 };
