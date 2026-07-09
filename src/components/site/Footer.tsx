@@ -62,6 +62,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
             <li>{BRAND.email}</li>
             <li>{BRAND.phone}</li>
+            <li>{BRAND.phone2}</li>
             <li>Mon–Sat · 10am – 8pm IST</li>
           </ul>
           <Link
