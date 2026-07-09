@@ -9,8 +9,8 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
           <Link to="/" className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground">
-              <Sparkles className="h-5 w-5" />
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary/10 p-1.5">
+              <img src={logo.url} alt="Quick Shortly logo" className="h-full w-auto" />
             </span>
             <span className="text-base font-bold">Quick Shortly</span>
           </Link>
