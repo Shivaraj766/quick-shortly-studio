@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Sparkles } from "lucide-react";
-import { NAV_LINKS, BRAND } from "@/lib/site-data";
+import { Menu, X } from "lucide-react";
+import { NAV_LINKS } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/quickshotly-bolt.png.asset.json";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
