@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Sparkles, Instagram, Youtube, Mail, Phone } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { NAV_LINKS, BRAND, SERVICES } from "@/lib/site-data";
+import logo from "@/assets/quickshotly-bolt.png.asset.json";
 
 export function Footer() {
   return (
