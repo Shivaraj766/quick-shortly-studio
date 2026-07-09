@@ -7,15 +7,15 @@ import { STATS } from "@/lib/site-data";
 
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutStory from "@/assets/about-story.jpg";
-import loki from "@/assets/team/loki.png.asset.json";
-import harsha from "@/assets/team/harsha.png.asset.json";
-import ajay from "@/assets/team/ajay.png.asset.json";
-import akhil from "@/assets/team/akhil.png.asset.json";
-import shivaCharri from "@/assets/team/shiva-charri.png.asset.json";
-import nagababu from "@/assets/team/nagababu.png.asset.json";
-import shiva from "@/assets/team/shiva.png.asset.json";
-import yethindra from "@/assets/team/yethindra.png.asset.json";
-import jashva from "@/assets/team/jashva.png.asset.json";
+import loki from "@/assets/team/loki.jpeg";
+import harsha from "@/assets/team/harsha.jpeg";
+import ajay from "@/assets/team/ajay.jpeg";
+import akhil from "@/assets/team/akhil.jpeg";
+import shivaCharri from "@/assets/team/shiva-charri.jpeg";
+import nagababu from "@/assets/team/nagababu.jpeg";
+import shiva from "@/assets/team/shiva.jpeg";
+import yethindra from "@/assets/team/yethindra.jpeg";
+import jashva from "@/assets/team/jashva.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -35,17 +35,17 @@ export const Route = createFileRoute("/about")({
   component: About,
 });
 
-const LEADERSHIP = { name: "Loki", role: "Founder & CEO", image: loki.url };
-const DESIGN = { name: "Harsha", role: "UI/UX & Lead Editor", image: harsha.url };
+const LEADERSHIP = { name: "Loki", role: "Founder & CEO", image: loki };
+const DESIGN = { name: "Harsha", role: "UI/UX & Lead Editor", image: harsha };
 
 const CREATIVE_TEAM = [
-  { name: "Ajay", image: ajay.url },
-  { name: "Akhil", image: akhil.url },
-  { name: "Shiva Charri", image: shivaCharri.url },
-  { name: "Nagababu", image: nagababu.url },
-  { name: "Shiva", image: shiva.url },
-  { name: "Yethindra", image: yethindra.url },
-  { name: "Jashva", image: jashva.url },
+  { name: "Ajay", image: ajay },
+  { name: "Akhil", image: akhil },
+  { name: "Shiva Charri", image: shivaCharri },
+  { name: "Nagababu", image: nagababu },
+  { name: "Shiva", image: shiva },
+  { name: "Yethindra", image: yethindra },
+  { name: "Jashva", image: jashva },
 ];
 
 const VALUES = [

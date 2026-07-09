@@ -11,6 +11,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import logoFavicon from "@/assets/quickshotly-bolt.png?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Navbar } from "../components/site/Navbar";
 import { Footer } from "../components/site/Footer";
@@ -105,7 +106,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f26fa3e2-8aea-4346-a261-6eefaa15bb6f/id-preview-81a8c43a--cbf5b8f2-2994-46a6-b3e2-14c6e1e8cd11.lovable.app-1782794063859.png" },
     ],
     links: [
-      { rel: "stylesheet", href: appCss },
+    { rel: "icon", href: logoFavicon },
+    { rel: "apple-touch-icon", href: logoFavicon },
+    { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

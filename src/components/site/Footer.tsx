@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { NAV_LINKS, BRAND, SERVICES } from "@/lib/site-data";
-import logo from "@/assets/quickshotly-bolt.png.asset.json";
+import logo from "@/assets/quickshotly-bolt.png";
 
 export function Footer() {
   return (
@@ -9,8 +9,9 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
           <Link to="/" className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary/10 p-1.5">
-              <img src={logo.url} alt="Quick Shortly logo" className="h-full w-auto" />
+
+            <span className="grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-xl bg-primary/10 p-1.5">
+              <img src={logo} alt="Quick Shortly logo" className="h-full w-auto" />
             </span>
             <span className="text-base font-bold">Quick Shortly</span>
           </Link>

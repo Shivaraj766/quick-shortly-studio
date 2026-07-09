@@ -34,7 +34,7 @@ export function TeamCard({
           src={image}
           alt={`${name}${role ? `, ${role}` : ""}`}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
         />
       </div>
       <h3 className={cn("mt-5 font-bold", size === "lg" ? "text-2xl" : "text-lg")}>{name}</h3>
