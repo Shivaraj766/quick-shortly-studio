@@ -13,7 +13,7 @@ import {
 import { DashboardShell, StatCard, StatusBadge, type NavItem } from "@/components/dashboard/DashboardShell";
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "Dashboard — Quick Shortly" }] }),
+  head: () => ({ meta: [{ title: "Dashboard — Quick Shotly" }] }),
   component: Dashboard,
 });
 
@@ -135,7 +135,7 @@ function Dashboard() {
           <h2 className="text-lg font-bold">{title}</h2>
           <div className="mt-5 grid max-w-lg gap-4">
             <Input label="Full name" defaultValue="Quick Client" />
-            <Input label="Email" defaultValue="client@quickshortly.com" />
+            <Input label="Email" defaultValue="client@quickshotly.com" />
             <Input label="Mobile" defaultValue="+91 98765 43210" />
             <button className="justify-self-start rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground">Save changes</button>
           </div>

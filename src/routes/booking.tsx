@@ -8,12 +8,12 @@ import { PageHero } from "@/components/site/primitives";
 export const Route = createFileRoute("/booking")({
   head: () => ({
     meta: [
-      { title: "Booking — Quick Shortly" },
+      { title: "Booking — Quick Shotly" },
       {
         name: "description",
-        content: "Book a cinematic shoot or edit with Quick Shortly using our simple multi-step booking form.",
+        content: "Book a cinematic shoot or edit with Quick Shotly using our simple multi-step booking form.",
       },
-      { property: "og:title", content: "Book a Project — Quick Shortly" },
+      { property: "og:title", content: "Book a Project — Quick Shotly" },
       { property: "og:description", content: "Start your cinematic project in a few simple steps." },
     ],
   }),

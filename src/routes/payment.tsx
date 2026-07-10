@@ -15,12 +15,12 @@ export const Route = createFileRoute("/payment")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Payment — Quick Shortly" },
+      { title: "Payment — Quick Shotly" },
       {
         name: "description",
-        content: "Securely pay for your Quick Shortly booking via UPI, cards or net banking and download your invoice.",
+        content: "Securely pay for your Quick Shotly booking via UPI, cards or net banking and download your invoice.",
       },
-      { property: "og:title", content: "Payment — Quick Shortly" },
+      { property: "og:title", content: "Payment — Quick Shotly" },
       { property: "og:description", content: "Complete your booking payment securely." },
     ],
   }),
@@ -51,7 +51,7 @@ function Payment() {
     const { jsPDF } = await import("jspdf");
     const doc = new jsPDF();
     doc.setFontSize(22);
-    doc.text("Quick Shortly", 20, 25);
+    doc.text("Quick Shotly", 20, 25);
     doc.setFontSize(10);
     doc.text("Shoot on iPhone. Edit Like Cinema.", 20, 32);
     doc.setFontSize(14);
@@ -80,7 +80,7 @@ function Payment() {
     row("Total Paid", `INR ${total.toLocaleString()}`);
     y += 6;
     doc.setFontSize(10);
-    doc.text("Thank you for choosing Quick Shortly!", 20, y + 6);
+    doc.text("Thank you for choosing Quick Shotly!", 20, y + 6);
     doc.save(`${invoiceNo}.pdf`);
   }
 

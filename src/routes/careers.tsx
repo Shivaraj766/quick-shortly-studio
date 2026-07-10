@@ -8,13 +8,13 @@ import { PageHero, Stagger, StaggerItem, Reveal } from "@/components/site/primit
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — Quick Shortly" },
+      { title: "Careers — Quick Shotly" },
       {
         name: "description",
         content:
-          "Join Quick Shortly. Open roles for video editors, motion graphics designers, AI video editors, camera operators and graphic designers.",
+          "Join Quick Shotly. Open roles for video editors, motion graphics designers, AI video editors, camera operators and graphic designers.",
       },
-      { property: "og:title", content: "Careers — Quick Shortly" },
+      { property: "og:title", content: "Careers — Quick Shotly" },
       { property: "og:description", content: "Build cinematic work with a world-class creative team." },
     ],
   }),

@@ -6,13 +6,13 @@ import { PageHero, Stagger, StaggerItem, Reveal } from "@/components/site/primit
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing — Quick Shortly" },
+      { title: "Pricing — Quick Shotly" },
       {
         name: "description",
         content:
-          "Transparent pricing for Quick Shortly: Starter, Professional, Premium and Enterprise plans for video shoots and cinematic editing.",
+          "Transparent pricing for Quick Shotly: Starter, Professional, Premium and Enterprise plans for video shoots and cinematic editing.",
       },
-      { property: "og:title", content: "Pricing — Quick Shortly" },
+      { property: "og:title", content: "Pricing — Quick Shotly" },
       { property: "og:description", content: "Simple, transparent packages that scale with your goals." },
     ],
   }),

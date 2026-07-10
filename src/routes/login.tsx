@@ -7,8 +7,8 @@ import { Sparkles, Phone, Mail, ArrowLeft } from "lucide-react";
 export const Route = createFileRoute("/login")({
   head: () => ({
     meta: [
-      { title: "Login — Quick Shortly" },
-      { name: "description", content: "Log in to your Quick Shortly account." },
+      { title: "Login — Quick Shotly" },
+      { name: "description", content: "Log in to your Quick Shotly account." },
     ],
   }),
   component: Login,
@@ -46,7 +46,7 @@ function Login() {
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground">
             <Sparkles className="h-5 w-5" />
           </span>
-          <span className="text-lg font-bold">Quick Shortly</span>
+          <span className="text-lg font-bold">Quick Shotly</span>
         </div>
         <h1 className="mt-6 text-2xl font-bold">Welcome back</h1>
         <p className="mt-1 text-sm text-muted-foreground">Log in to access your dashboard.</p>

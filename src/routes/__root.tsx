@@ -83,22 +83,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
+      { title: "Quick Shotly — Professional iPhone Shoots & Cinematic Video Editing" },
       {
         name: "description",
         content:
-          "Quick Shortly is a premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics with fast delivery.",
+          "Quick Shotly is a premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics with fast delivery.",
       },
-      { name: "author", content: "Quick Shortly" },
-      { property: "og:title", content: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
+      { name: "author", content: "Quick Shotly" },
+      { property: "og:title", content: "Quick Shotly — Professional iPhone Shoots & Cinematic Video Editing" },
       {
         property: "og:description",
         content: "Cinematic iPhone shoots & professional video editing for brands and creators.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@QuickShortly" },
-      { name: "twitter:title", content: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
+      { name: "twitter:site", content: "@QuickShotly" },
+      { name: "twitter:title", content: "Quick Shotly — Professional iPhone Shoots & Cinematic Video Editing" },
       { name: "description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },
       { property: "og:description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },
       { name: "twitter:description", content: "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema." },

@@ -63,7 +63,7 @@ function About() {
         <div className="absolute inset-0 -z-20">
           <img
             src={aboutHero}
-            alt="Quick Shortly film crew shooting on iPhone in a cinematic studio"
+            alt="Quick Shotly film crew shooting on iPhone in a cinematic studio"
             width={1920}
             height={1080}
             className="h-full w-full object-cover"
@@ -79,7 +79,7 @@ function About() {
               We make iPhones look like <span className="text-gradient">cinema</span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
-              Quick Shortly is a premium creative agency obsessed with story, craft, and turnaround. We turn everyday
+              Quick Shotly is a premium creative agency obsessed with story, craft, and turnaround. We turn everyday
               devices into cinematic machines — for brands, creators, and unforgettable moments.
             </p>
           </motion.div>
@@ -93,7 +93,7 @@ function About() {
             <div className="relative overflow-hidden rounded-[2rem] border border-border">
               <img
                 src={aboutStory}
-                alt="Quick Shortly editor color grading footage in the studio"
+                alt="Quick Shotly editor color grading footage in the studio"
                 width={1200}
                 height={1200}
                 loading="lazy"
@@ -150,7 +150,7 @@ function About() {
         {/* Leadership + Design */}
         <div className="mx-auto mt-12 grid max-w-3xl gap-6 sm:grid-cols-2">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }}>
-            <TeamCard {...LEADERSHIP} size="lg" description="The visionary steering Quick Shortly's creative direction." />
+            <TeamCard {...LEADERSHIP} size="lg" description="The visionary steering Quick Shotly's creative direction." />
           </motion.div>
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }}>
             <TeamCard {...DESIGN} size="lg" description="Shaping every pixel — from UI/UX to the final cinematic edit." />

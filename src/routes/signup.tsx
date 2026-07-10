@@ -6,8 +6,8 @@ import { Sparkles, ArrowLeft } from "lucide-react";
 export const Route = createFileRoute("/signup")({
   head: () => ({
     meta: [
-      { title: "Sign Up — Quick Shortly" },
-      { name: "description", content: "Create your Quick Shortly account." },
+      { title: "Sign Up — Quick Shotly" },
+      { name: "description", content: "Create your Quick Shotly account." },
     ],
   }),
   component: Signup,
@@ -46,7 +46,7 @@ function Signup() {
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground">
             <Sparkles className="h-5 w-5" />
           </span>
-          <span className="text-lg font-bold">Quick Shortly</span>
+          <span className="text-lg font-bold">Quick Shotly</span>
         </div>
         <h1 className="mt-6 text-2xl font-bold">Create your account</h1>
         <p className="mt-1 text-sm text-muted-foreground">Join 1,200+ brands and creators.</p>

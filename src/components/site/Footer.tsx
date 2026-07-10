@@ -11,9 +11,9 @@ export function Footer() {
           <Link to="/" className="flex items-center gap-2">
 
             <span className="grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-xl bg-primary/10 p-1.5">
-              <img src={logo} alt="Quick Shortly logo" className="h-full w-auto" />
+              <img src={logo} alt="Quick Shotly logo" className="h-full w-auto" />
             </span>
-            <span className="text-base font-bold">Quick Shortly</span>
+            <span className="text-base font-bold">Quick Shotly</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">{BRAND.tagline}</p>
           <div className="mt-5 flex gap-3">
@@ -77,7 +77,7 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Quick Shortly. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Quick Shotly. All rights reserved.</p>
           <p>Shoot on iPhone. Edit Like Cinema.</p>
         </div>
       </div>

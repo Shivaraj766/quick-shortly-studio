@@ -36,7 +36,7 @@ export function DashboardShell({
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground">
             <Sparkles className="h-5 w-5" />
           </span>
-          <span className="font-bold">Quick Shortly</span>
+          <span className="font-bold">Quick Shotly</span>
         </div>
         <nav className="grid gap-1 p-3">
           {items.map((it) => (

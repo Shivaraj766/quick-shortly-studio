@@ -7,13 +7,13 @@ import { PageHero, Reveal, Stagger, StaggerItem } from "@/components/site/primit
 export const Route = createFileRoute("/feedback")({
   head: () => ({
     meta: [
-      { title: "Feedback — Quick Shortly" },
+      { title: "Feedback — Quick Shotly" },
       {
         name: "description",
         content:
-          "Share your experience with Quick Shortly. Leave a star rating, written review, photo or video testimonial.",
+          "Share your experience with Quick Shotly. Leave a star rating, written review, photo or video testimonial.",
       },
-      { property: "og:title", content: "Feedback — Quick Shortly" },
+      { property: "og:title", content: "Feedback — Quick Shotly" },
       { property: "og:description", content: "Read client testimonials and share your own review." },
     ],
   }),
@@ -49,7 +49,7 @@ function Feedback() {
       <PageHero
         eyebrow="Feedback"
         title={<>Loved by <span className="text-gradient">creators & brands</span></>}
-        subtitle="Your story matters. Rate your experience and help others discover Quick Shortly."
+        subtitle="Your story matters. Rate your experience and help others discover Quick Shotly."
       />
 
       <section className="mx-auto max-w-3xl px-6 py-10">

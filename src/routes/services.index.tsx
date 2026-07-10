@@ -7,13 +7,13 @@ import { PageHero, Stagger, StaggerItem } from "@/components/site/primitives";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Services — Quick Shortly" },
+      { title: "Services — Quick Shotly" },
       {
         name: "description",
         content:
-          "Explore Quick Shortly services: Instagram reels, wedding films, corporate ads, AI videos, motion graphics, color grading, YouTube editing and more.",
+          "Explore Quick Shotly services: Instagram reels, wedding films, corporate ads, AI videos, motion graphics, color grading, YouTube editing and more.",
       },
-      { property: "og:title", content: "Services — Quick Shortly" },
+      { property: "og:title", content: "Services — Quick Shotly" },
       { property: "og:description", content: "13 premium creative services for brands and creators." },
     ],
   }),

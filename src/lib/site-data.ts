@@ -12,7 +12,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const BRAND = {
-  name: "Quick Shortly",
+  name: "Quick Shotly",
   tagline: "Shoot on iPhone. Edit Like Cinema.",
   email: "quickshotly21@gmail.com",
   phone: "+91 81437 41961",

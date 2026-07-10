@@ -9,13 +9,13 @@ import { Reveal, Stagger, StaggerItem, Counter, SectionHeading } from "@/compone
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Quick Shortly — Professional iPhone Shoots & Cinematic Video Editing" },
+      { title: "Quick Shotly — Professional iPhone Shoots & Cinematic Video Editing" },
       {
         name: "description",
         content:
           "Premium creative agency for cinematic iPhone shoots, wedding films, Instagram reels, AI videos, and motion graphics. Shoot on iPhone. Edit Like Cinema.",
       },
-      { property: "og:title", content: "Quick Shortly — Shoot on iPhone. Edit Like Cinema." },
+      { property: "og:title", content: "Quick Shotly — Shoot on iPhone. Edit Like Cinema." },
       {
         property: "og:description",
         content: "Professional iPhone shoots & cinematic video editing for brands and creators.",
@@ -241,7 +241,7 @@ function Home() {
                 Ready to make something <span className="text-gradient">cinematic?</span>
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-                Join 1,200+ brands and creators who trust Quick Shortly with their story.
+                Join 1,200+ brands and creators who trust Quick Shotly with their story.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Link to="/booking" className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow-sm transition-all hover:shadow-glow">

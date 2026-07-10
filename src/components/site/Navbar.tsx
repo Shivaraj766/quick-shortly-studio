@@ -37,7 +37,7 @@ export function Navbar() {
       >
         <Link to="/" className="group flex items-center gap-2">
             <span className="grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-xl bg-primary/10 p-2 shadow-glow-sm transition-transform group-hover:scale-110">
-            <img src={logo} alt="Quick Shortly logo" className="h-full w-auto" />
+            <img src={logo} alt="Quick Shotly logo" className="h-full w-auto" />
           </span>
           <span className="text-base font-bold tracking-tight">Quick Shotly</span>
         </Link>

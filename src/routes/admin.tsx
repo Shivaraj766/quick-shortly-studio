@@ -15,7 +15,7 @@ import {
 import { DashboardShell, StatCard, StatusBadge, type NavItem } from "@/components/dashboard/DashboardShell";
 
 export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Admin — Quick Shortly" }] }),
+  head: () => ({ meta: [{ title: "Admin — Quick Shotly" }] }),
   component: Admin,
 });
 

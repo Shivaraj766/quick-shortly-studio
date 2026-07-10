@@ -7,13 +7,13 @@ import { PageHero, Reveal } from "@/components/site/primitives";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Quick Shortly" },
+      { title: "Contact — Quick Shotly" },
       {
         name: "description",
         content:
-          "Get in touch with Quick Shortly via WhatsApp, Instagram, YouTube, email or phone. Send us a message and we'll respond fast.",
+          "Get in touch with Quick Shotly via WhatsApp, Instagram, YouTube, email or phone. Send us a message and we'll respond fast.",
       },
-      { property: "og:title", content: "Contact — Quick Shortly" },
+      { property: "og:title", content: "Contact — Quick Shotly" },
       { property: "og:description", content: "Let's talk about your next cinematic project." },
     ],
   }),
@@ -22,8 +22,8 @@ export const Route = createFileRoute("/contact")({
 
 const CHANNELS = [
   { icon: MessageCircle, label: "WhatsApp", value: BRAND.phone, href: `https://wa.me/${BRAND.whatsapp}` },
-  { icon: Instagram, label: "Instagram", value: "@quickshortly", href: BRAND.instagram },
-  { icon: Youtube, label: "YouTube", value: "Quick Shortly", href: BRAND.youtube },
+  { icon: Instagram, label: "Instagram", value: "@quickshotly", href: BRAND.instagram },
+  { icon: Youtube, label: "YouTube", value: "Quick Shotly", href: BRAND.youtube },
   { icon: Mail, label: "Email", value: BRAND.email, href: `mailto:${BRAND.email}` },
   { icon: Phone, label: "Phone", value: BRAND.phone, href: `tel:${BRAND.phone.replace(/\s/g, "")}` },
   { icon: Phone, label: "Phone", value: BRAND.phone2, href: `tel:${BRAND.phone2.replace(/\s/g, "")}` },
@@ -32,7 +32,7 @@ const CHANNELS = [
 function Contact() {
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();
-    toast.success("Message sent! We'll get back to you shortly.");
+    toast.success("Message sent! We'll get back to you shotly.");
     (e.target as HTMLFormElement).reset();
   }
 
@@ -67,7 +67,7 @@ function Contact() {
           </div>
           <div className="mt-4 overflow-hidden rounded-3xl border border-border">
             <iframe
-              title="Quick Shortly location"
+              title="Quick Shotly location"
               src="https://www.google.com/maps?q=Mumbai&output=embed"
               className="h-64 w-full grayscale"
               loading="lazy"

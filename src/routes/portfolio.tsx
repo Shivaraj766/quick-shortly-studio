@@ -8,13 +8,13 @@ import { PageHero } from "@/components/site/primitives";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Quick Shortly" },
+      { title: "Portfolio — Quick Shotly" },
       {
         name: "description",
         content:
-          "Browse Quick Shortly's portfolio of wedding films, corporate ads, Instagram reels, AI videos, commercials and trailers.",
+          "Browse Quick Shotly's portfolio of wedding films, corporate ads, Instagram reels, AI videos, commercials and trailers.",
       },
-      { property: "og:title", content: "Portfolio — Quick Shortly" },
+      { property: "og:title", content: "Portfolio — Quick Shotly" },
       { property: "og:description", content: "Cinematic work across weddings, brands, AI and more." },
     ],
   }),
