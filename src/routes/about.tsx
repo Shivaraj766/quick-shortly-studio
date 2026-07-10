@@ -20,13 +20,13 @@ import jashva from "@/assets/team/jashva.jpeg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Quick Shortly | Creative Agency" },
+      { title: "About — Quick Shotly | Creative Agency" },
       {
         name: "description",
         content:
-          "Meet the Quick Shortly team — a premium creative agency crafting cinematic iPhone shoots, wedding films, Instagram reels, AI videos and motion graphics with fast delivery.",
+          "Meet the Quick Shotly team — a premium creative agency crafting cinematic iPhone shoots, wedding films, Instagram reels, AI videos and motion graphics with fast delivery.",
       },
-      { property: "og:title", content: "About Quick Shortly" },
+      { property: "og:title", content: "About Quick Shotly" },
       { property: "og:description", content: "A premium creative agency built for the cinematic age." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -111,7 +111,7 @@ function About() {
               </h2>
               <div className="mt-5 space-y-4 text-muted-foreground">
                 <p>
-                  Quick Shortly started with a simple belief: world-class video shouldn't require a Hollywood budget.
+                  Quick Shotly started with a simple belief: world-class video shouldn't require a Hollywood budget.
                   Armed with iPhones, cinema lenses, and a relentless eye for craft, we set out to prove that great
                   stories come from vision, not just gear.
                 </p>
