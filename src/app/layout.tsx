@@ -28,10 +28,13 @@ export const metadata: Metadata = {
   },
 };
 
+import { LaunchVideo } from "@/components/shared/LaunchVideo";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark font-poppins">
       <body className="font-sans antialiased">
+        <LaunchVideo />
         <Providers>
           {children}
         </Providers>
