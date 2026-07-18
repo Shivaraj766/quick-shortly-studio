@@ -30,7 +30,6 @@ export function LaunchVideo() {
           <video
             src="/launch.mp4"
             autoPlay
-            muted
             playsInline
             onEnded={handleVideoEnd}
             className="h-full w-full object-cover"
