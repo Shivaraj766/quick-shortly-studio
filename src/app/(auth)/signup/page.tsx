@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
@@ -97,10 +98,9 @@ export default function Signup() {
           <ArrowLeft className="h-3.5 w-3.5" /> Back to site
         </Link>
         <div className="flex items-center gap-2">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground">
-            <Sparkles className="h-5 w-5" />
+          <span className="relative h-14 w-52">
+            <Image src="/quickshotlylogo.PNG" alt="Quick Shotly" fill className="object-contain object-left" />
           </span>
-          <span className="text-lg font-bold">Quick Shotly</span>
         </div>
         <h1 className="mt-6 text-2xl font-bold">Create your account</h1>
         <p className="mt-1 text-sm text-muted-foreground">Join 1,200+ brands and creators.</p>
