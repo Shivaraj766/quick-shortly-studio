@@ -34,14 +34,14 @@ export function LaunchVideo() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black"
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black overflow-hidden"
         >
           <video
             ref={videoRef}
             src="/launch.mp4"
             playsInline
             onEnded={handleVideoEnd}
-            className="absolute h-[100vw] w-[100vh] origin-center rotate-90 object-cover lg:static lg:h-full lg:w-full lg:rotate-0"
+            className="absolute h-[100dvw] w-[100dvh] origin-center -rotate-90 object-cover lg:static lg:h-full lg:w-full lg:rotate-0"
           />
 
           {!hasStarted && (
