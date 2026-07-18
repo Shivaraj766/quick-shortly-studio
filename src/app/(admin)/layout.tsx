@@ -6,7 +6,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   const { data: { session } } = await supabase.auth.getSession();
 
   // If no user is logged in, or the email is NOT the admin email, deny access
-  if (!session || session.user.email !== "shivarajsing13@gmail.com") {
+  if (!session || !["shivarajsing13@gmail.com", "pudarilokesh37072@gmail.com"].includes(session.user.email ?? "")) {
     redirect("/login");
   }
 

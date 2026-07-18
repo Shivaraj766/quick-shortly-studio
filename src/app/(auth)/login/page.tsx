@@ -33,8 +33,8 @@ export default function Login() {
 
     toast.success("Welcome back!");
     const email = formData.get("email") as string;
-    if (email === "shivarajsing13@gmail.com") {
-      router.push("/dashboard");
+    if (["shivarajsing13@gmail.com", "pudarilokesh37072@gmail.com"].includes(email)) {
+      router.push("/admin/projects");
     } else {
       router.push("/");
     }
@@ -82,8 +82,8 @@ export default function Login() {
 
     toast.success("Verified successfully!");
     const email = formData.get("email") as string;
-    if (email === "shivarajsing13@gmail.com") {
-      router.push("/dashboard");
+    if (["shivarajsing13@gmail.com", "pudarilokesh37072@gmail.com"].includes(email)) {
+      router.push("/admin/projects");
     } else {
       router.push("/");
     }

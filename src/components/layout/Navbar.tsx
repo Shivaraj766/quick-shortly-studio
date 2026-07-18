@@ -33,7 +33,7 @@ export function Navbar() {
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (mounted) {
         setIsLoggedIn(!!session);
-        setIsAdmin(session?.user?.email === "shivarajsing13@gmail.com");
+        setIsAdmin(["shivarajsing13@gmail.com", "pudarilokesh37072@gmail.com"].includes(session?.user?.email ?? ""));
       }
     });
 
@@ -41,7 +41,7 @@ export function Navbar() {
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (mounted) {
         setIsLoggedIn(!!session);
-        setIsAdmin(session?.user?.email === "shivarajsing13@gmail.com");
+        setIsAdmin(["shivarajsing13@gmail.com", "pudarilokesh37072@gmail.com"].includes(session?.user?.email ?? ""));
       }
     });
 
