@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Volume2, VolumeX, X } from "lucide-react";
 
 export function LaunchVideo() {
   const [show, setShow] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const hasSeenLaunch = sessionStorage.getItem("hasSeenLaunch");
@@ -30,11 +32,32 @@ export function LaunchVideo() {
           <video
             src="/launch.mp4"
             autoPlay
-            muted
+            muted={isMuted}
             playsInline
             onEnded={handleVideoEnd}
             className="h-full w-full object-cover"
           />
+
+          <button
+            onClick={() => setIsMuted(!isMuted)}
+            className="absolute bottom-8 right-8 z-50 flex items-center gap-2 rounded-full bg-black/50 px-4 py-2 text-white backdrop-blur-md transition-colors hover:bg-black/70"
+          >
+            {isMuted ? (
+              <>
+                <VolumeX className="h-5 w-5" />
+                <span className="text-sm font-medium">Tap to unmute</span>
+              </>
+            ) : (
+              <Volume2 className="h-5 w-5" />
+            )}
+          </button>
+
+          <button
+            onClick={handleVideoEnd}
+            className="absolute top-8 right-8 z-50 grid h-10 w-10 place-items-center rounded-full bg-black/50 text-white backdrop-blur-md transition-colors hover:bg-black/70"
+          >
+            <X className="h-5 w-5" />
+          </button>
         </motion.div>
       )}
     </AnimatePresence>
