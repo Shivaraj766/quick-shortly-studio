@@ -14,7 +14,7 @@ const harsha = "/team/harsha.jpeg";
 const ajay = "/team/ajay.jpeg";
 const akhil = "/team/akhil.jpeg";
 const shivaChary = "/team/shiva-charri.jpeg";
-const nagababu = "/team/nagababu.jpeg";
+
 const shiva = "/team/shiva.jpeg";
 const yethindra = "/team/yethindra.jpeg";
 const manishReddy = "/team/manish-reddy.jpeg";
@@ -26,7 +26,7 @@ const CREATIVE_TEAM = [
   { name: "Ajay", image: ajay },
   { name: "Akhil", image: akhil },
   { name: "Shiva Chary", image: shivaChary },
-  { name: "Nagababu", image: nagababu },
+  
   { name: "Shiva Prasad", image: shiva },
   { name: "Yethindra", image: yethindra },
   { name: "Manish Reddy", image: manishReddy },
