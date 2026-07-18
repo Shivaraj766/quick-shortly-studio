@@ -16,7 +16,7 @@ export const bookingSchema = z.object({
     "Instagram Reels",
     "YouTube Editing",
     "Custom Project",
-  ], { required_error: "Please select a service" }),
+  ], { message: "Please select a service" }),
 
   // Step 3 (Dynamic) - kept flexible in schema, we will validate explicitly where needed
   dynamic_service_answers: z.any().optional(),
