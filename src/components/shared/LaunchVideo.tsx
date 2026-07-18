@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 export function LaunchVideo() {
   const [show, setShow] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const hasSeenLaunch = sessionStorage.getItem("hasSeenLaunch");
@@ -18,6 +20,13 @@ export function LaunchVideo() {
     sessionStorage.setItem("hasSeenLaunch", "true");
   };
 
+  const startVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setHasStarted(true);
+    }
+  };
+
   return (
     <AnimatePresence>
       {show && (
@@ -28,12 +37,24 @@ export function LaunchVideo() {
           className="fixed inset-0 z-[99999] flex items-center justify-center bg-black"
         >
           <video
+            ref={videoRef}
             src="/launch.mp4"
-            autoPlay
             playsInline
             onEnded={handleVideoEnd}
             className="h-full w-full object-cover"
           />
+
+          {!hasStarted && (
+            <motion.button
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              onClick={startVideo}
+              className="absolute z-50 rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-md transition-all hover:bg-white/20 hover:scale-105"
+            >
+              ENTER EXPERIENCE
+            </motion.button>
+          )}
         </motion.div>
       )}
     </AnimatePresence>
