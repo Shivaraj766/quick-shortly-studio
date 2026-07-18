@@ -52,7 +52,7 @@ export function LaunchVideo() {
               onClick={startVideo}
               className="absolute z-50 rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-md transition-all hover:bg-white/20 hover:scale-105"
             >
-              ENTER EXPERIENCE
+              LAUNCH SHOW
             </motion.button>
           )}
         </motion.div>
