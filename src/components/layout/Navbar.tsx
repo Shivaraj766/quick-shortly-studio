@@ -71,12 +71,12 @@ export function Navbar() {
     >
       <nav
         className={cn(
-          "mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 transition-all duration-300",
+          "mx-auto flex max-w-[1400px] items-center justify-between px-6 py-2 transition-all duration-300",
           scrolled ? "bg-background/80 backdrop-blur-md border-b border-white/5" : "bg-transparent"
         )}
       >
         <Link href="/" className="group flex items-center">
-          <span className="relative h-20 w-64 sm:h-24 sm:w-80 md:h-28 md:w-96">
+          <span className="relative h-12 w-48 sm:h-14 sm:w-56 md:h-16 md:w-72">
             <Image src="/quickshotlylogo.PNG" alt="Quick Shotly" fill className="object-contain object-left" />
           </span>
         </Link>
