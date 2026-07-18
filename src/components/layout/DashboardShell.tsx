@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
@@ -6,7 +8,7 @@ import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export type NavItem = { label: string; icon: LucideIcon; key: string };
+export type NavItem = { label: string; icon: LucideIcon; key: string; href?: string };
 
 export function DashboardShell({
   title,

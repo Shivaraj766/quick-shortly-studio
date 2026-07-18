@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import { format } from "date-fns";
 import { Clock, CheckCircle2, ChevronRight, FileText, Paperclip } from "lucide-react";
 import Link from "next/link";
+import { AdminProjectsShell } from "./AdminProjectsShell";
 
 export default async function AdminProjectsPage() {
   const supabase = await createClient();
@@ -16,7 +17,8 @@ export default async function AdminProjectsPage() {
   }
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-8">
+    <AdminProjectsShell>
+      <div className="p-8 max-w-7xl mx-auto space-y-8">
       <div>
         <h1 className="text-3xl font-bold">Project Requests</h1>
         <p className="text-muted-foreground">Manage and review incoming booking requests.</p>
@@ -92,5 +94,6 @@ export default async function AdminProjectsPage() {
         )}
       </div>
     </div>
+    </AdminProjectsShell>
   );
 }
