@@ -41,7 +41,7 @@ export function LaunchVideo() {
             src="/launch.mp4"
             playsInline
             onEnded={handleVideoEnd}
-            className="h-full w-full object-contain lg:object-cover"
+            className="absolute h-[100vw] w-[100vh] origin-center rotate-90 object-cover lg:static lg:h-full lg:w-full lg:rotate-0"
           />
 
           {!hasStarted && (
